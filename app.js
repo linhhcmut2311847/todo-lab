@@ -5,3 +5,7 @@ function displayTasks() {
   list.innerHTML = tasks.map(t => `<li>${t}</li>`).join("");
 }
 
+function addTask(task) {
+  tasks.push(task);
+  displayTasks();
+}
